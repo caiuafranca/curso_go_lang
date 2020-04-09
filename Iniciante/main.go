@@ -1,6 +1,7 @@
 package main
 
 import (
+	"CursoUdemy/Iniciante/matematica"
 	"CursoUdemy/Iniciante/welcome"
 	"fmt"
 )
@@ -18,5 +19,6 @@ var (
 func main() {
 
 	fmt.Printf("%s\n", welcome.OlaMundo("Caiua França"))
+	fmt.Printf("A soma 2 + 2 = %d", matematica.Soma(2, 2))
 
 }
