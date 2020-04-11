@@ -1,6 +1,7 @@
 package main
 
 import (
+	"CursoUdemy/Iniciante/estrutura"
 	"CursoUdemy/Iniciante/matematica"
 	"CursoUdemy/Iniciante/welcome"
 	"testing"
@@ -48,4 +49,15 @@ func TestSubtrairDoisNumeros(t *testing.T) {
 		t.Error("Ocorreu um erro na subtração")
 	}
 
+}
+
+func TestCreateStrutsStutend(t *testing.T) {
+
+	estudanteCriado := estrutura.Student{
+		"Caiua", " França", "Turma de GoLang",
+	}
+
+	if estudanteCriado.Nome != "Caiua" {
+		t.Error("Ocorreu algo Errado!.")
+	}
 }
