@@ -4,6 +4,7 @@ import (
 	"CursoUdemy/Iniciante/estrutura"
 	"CursoUdemy/Iniciante/matematica"
 	"CursoUdemy/Iniciante/welcome"
+	"fmt"
 	"testing"
 )
 
@@ -54,10 +55,22 @@ func TestSubtrairDoisNumeros(t *testing.T) {
 func TestCreateStrutsStutend(t *testing.T) {
 
 	estudanteCriado := estrutura.Student{
-		"Caiua", " França", "Turma de GoLang",
+		"Caiua", "França", "Turma de GoLang",
 	}
 
 	if estudanteCriado.Nome != "Caiua" {
 		t.Error("Ocorreu algo Errado!.")
 	}
+}
+
+func TestAcertouNumero(t *testing.T) {
+
+	numeroEscolhido := 20
+
+	contador := estrutura.Jogar(numeroEscolhido)
+	if 20 != 20 {
+		t.Error("não Acertou, tente novamente")
+	}
+	fmt.Printf("Acertou em %d jogadas", contador)
+
 }

@@ -1,6 +1,7 @@
 package main
 
 import (
+	"CursoUdemy/Iniciante/estrutura"
 	"CursoUdemy/Iniciante/matematica"
 	"CursoUdemy/Iniciante/welcome"
 	"fmt"
@@ -19,6 +20,8 @@ var (
 func main() {
 
 	fmt.Printf("%s\n", welcome.OlaMundo("Caiua França"))
-	fmt.Printf("A soma 2 + 2 = %d", matematica.Soma(2, 2))
+	fmt.Printf("A soma 2 + 2 = %d \n", matematica.Soma(2, 2))
+
+	fmt.Printf("A quantidade de Jogadas foi: %d vezes\n", estrutura.Jogar(30))
 
 }
